@@ -9,9 +9,9 @@ const forecast = (lati, lang, callback) => {
             callback('Unable to find location', undefined)
         }
         else {
-            callback(undefined, "The temperature is" + body.current.temperature + "It feels like" + body.current.feelslike
+            callback(undefined, "The temperature is" + " " + body.current.temperature + " " + "degree." + "It feels like" + " " + body.current.feelslike + " " + "degree" + " "
 
-                + "The summary is" + body.current.weather_descriptions[0] + "The humidity is" + body.current.humidity
+                + "The day looks" + " " + body.current.weather_descriptions[0] + "The humidity is" + " " + body.current.humidity + "%"
 
 
             )
