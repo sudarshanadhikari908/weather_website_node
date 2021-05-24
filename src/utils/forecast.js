@@ -11,12 +11,13 @@ const forecast = (lati, lang, callback) => {
         else {
             callback(undefined, "The temperature is" + body.current.temperature + "It feels like" + body.current.feelslike
 
-                + "The summary is" + body.current.weather_descriptions[0]
+                + "The summary is" + body.current.weather_descriptions[0] + "The humidity is" + body.current.humidity
 
 
             )
         }
     })
+
 
     //     }
     //     else if (response.body.error) {
